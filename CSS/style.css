@@ -1,8 +1,85 @@
 :root {
-
+    --header-color:#f1f5f9;
+    --sidebar-color: #3b82f6;
+    --content-color: #e2e8f0;
 }
-
+ul {
+    list-style: none;
+}
 body {
     margin: 0;
     padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns:  300px 1fr;
+}
+.header {
+    background-color: var(--header-color);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    z-index: 1;
+}
+
+.header .divide {
+    display: flex;
+    margin-left: 5%;
+    margin-right: 10%;
+    align-items: center;
+    gap: 5%;
+}
+
+#upperRight {
+    justify-content: flex-end;
+}
+
+#headerBtn {
+    gap: 5%;
+    justify-self: flex-end;
+}
+
+.divide input {
+    padding-right: 35vw;
+    padding-bottom: 10px;
+    border-radius: 1rem;
+    background-color: #94a3b8;
+    border: none ;
+}
+
+.divide button {
+    background-color: #3b82f6;
+    color: white;
+    width: 5vw;
+    height: 4vh;
+    border-radius: 1rem;
+    text-align: center;
+    border: none;
+}
+
+.sidebar {
+    grid-row: 1 / span 3;
+    background-color: var(--sidebar-color);
+}
+
+.header img {
+    width: 5%;
+}
+
+.sidebar img {
+    width: 10%;
+}
+
+.sidebar ul{
+    display: flex;
+    flex-direction: column;
+}
+.links {
+    display: flex;
+    gap: 3%;
+}
+
+.content {
+    background-color: var(--content-color);
 }
