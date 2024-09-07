@@ -67,8 +67,9 @@ body {
     width: 5%;
 }
 
-.sidebar img {
+.sidebar img{
     width: 10%;
+    filter: brightness(0) invert(1);
 }
 
 .sidebar ul{
